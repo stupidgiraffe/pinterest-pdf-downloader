@@ -1,16 +1,16 @@
 // ==UserScript==
 // @name         Pinterest High-Quality PDF Downloader
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/stupidgiraffe/
 // @version      2.4
 // @description  Download ONLY main Pinterest images as high-quality PDF. Uses html2canvas to avoid CORS/blank PDF issues.
 // @author       stupidgiraffe
-// @match        https://www.pinterest.com/*
-// @match        https://jp.pinterest.com/*
+// @match        https://*.pinterest.com/*
+// @license      MIT
 // @grant        GM_download
 // @grant        GM_addStyle
+// @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js
-// @require      https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
 
 (function($, window, html2canvas) {
